@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="            Laboratorio 3"
+        android:textSize="32dp"/>
+
+  <Spinner
+      android:id="@+id/spnoperacion"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNum1"
+        android:inputType="numberDecimal"
+        android:hint="Aqui va un numero"
+        android:textSize="32dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNum2"
+        android:inputType="numberDecimal"
+        android:hint="Aqui va otro numero"
+        android:textSize="32dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkDialog"
+        android:text="Mostrar en Dialog"
+        android:textSize="32dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:onClick="Calcular"
+        android:layout_margin="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblResultado"
+        android:text="0"
+        android:textSize="32dp"
+        android:textAlignment="center"/>
+
+</LinearLayout>
